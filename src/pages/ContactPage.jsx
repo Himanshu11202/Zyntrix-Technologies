@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Mail, Phone, MapPin, Send, MessageSquare, ExternalLink, Globe2 } from 'lucide-react';
+import OptimizedImage from '../components/OptimizedImage';
 
 const ContactPage = () => {
   const [form, setForm] = useState({ name: '', email: '', subject: '', message: '' });
@@ -220,7 +221,7 @@ const ContactPage = () => {
             <div className="glass-card" style={{ border: '1px solid var(--glass-border)', overflow: 'hidden' }}>
               <div style={{ position: 'relative', height: '220px', background: 'var(--bg-color)' }}>
                 {/* Tech map background */}
-                <img
+                <OptimizedImage
                   src="/engineering_map.png"
                   alt="Indore Office Location"
                   style={{ width: '100%', height: '100%', objectFit: 'cover', opacity: 0.4, filter: 'grayscale(1) invert(0.8)' }}

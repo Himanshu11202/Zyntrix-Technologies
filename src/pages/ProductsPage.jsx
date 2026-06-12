@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Check, Play, Star, X, ExternalLink, Cpu, Sparkles } from 'lucide-react';
+import OptimizedImage from '../components/OptimizedImage';
 
 const ProductsPage = ({ onNavigate }) => {
   const [activeTab, setActiveTab] = useState('nivas');
@@ -153,7 +154,7 @@ const ProductsPage = ({ onNavigate }) => {
                   boxShadow: '0 8px 30px var(--accent-glow)' 
                 }}
               >
-                <img 
+                <OptimizedImage 
                   src="/nivas_dashboard.png" 
                   alt="Nivas Dashboard Preview"
                   style={{ width: '100%', height: 'auto', display: 'block' }}
@@ -310,7 +311,7 @@ const ProductsPage = ({ onNavigate }) => {
                   margin: '0 auto' 
                 }}
               >
-                <img 
+                <OptimizedImage 
                   src="/scanbite_qr_ui.png" 
                   alt="ScanBite Mobile Mockup"
                   style={{ width: '100%', height: 'auto', display: 'block' }}

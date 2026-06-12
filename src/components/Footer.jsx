@@ -224,11 +224,23 @@ const Footer = ({ onNavigate }) => {
         color: 'var(--text-muted)'
       }}>
         <span>© {new Date().getFullYear()} Zyntrix Technologies. All rights reserved.</span>
-        <div style={{ display: 'flex', gap: '1.5rem' }}>
-          {['about', 'services', 'careers', 'contact'].map((page) => (
+        <div style={{ display: 'flex', gap: '1.5rem', flexWrap: 'wrap' }}>
+          {['about', 'services', 'pricing', 'careers', 'contact'].map((page) => (
             <button 
               key={page}
-              onClick={() => onNavigate(page)} 
+              onClick={() => {
+                if (page === 'pricing') {
+                  onNavigate('home');
+                  setTimeout(() => {
+                    const el = document.getElementById('pricing-slide');
+                    if (el) {
+                      el.scrollIntoView({ behavior: 'smooth' });
+                    }
+                  }, 150);
+                } else {
+                  onNavigate(page);
+                }
+              }}
               style={{ 
                 background: 'none', 
                 border: 'none', 

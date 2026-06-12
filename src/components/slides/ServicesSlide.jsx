@@ -1,5 +1,5 @@
 import React from 'react';
-import { Globe, Smartphone, Cloud, Cpu, Server, Palette, ArrowRight } from 'lucide-react';
+import { Globe, Smartphone, Cloud, Cpu, Server, Palette, ArrowRight, TrendingUp } from 'lucide-react';
 
 const ServiceCard = ({ icon: Icon, title, description, onNavigate }) => {
   return (
@@ -80,6 +80,11 @@ const ServicesSlide = ({ onNavigate }) => {
       icon: Palette,
       title: 'UI/UX Design',
       description: 'Interactive and visual prototyping that maps frictionless journeys and aligns with corporate design principles.'
+    },
+    {
+      icon: TrendingUp,
+      title: 'Digital Marketing',
+      description: 'Search SEO, high-conversion ad campaigns, branding strategy, and verified B2B lead generation to accelerate scale.'
     }
   ];
 

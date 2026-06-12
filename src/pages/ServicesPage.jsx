@@ -1,5 +1,5 @@
 import React from 'react';
-import { Code, Cloud, Cpu, Settings, Check, ArrowRight } from 'lucide-react';
+import { Code, Cloud, Cpu, Settings, Check, ArrowRight, Megaphone } from 'lucide-react';
 
 const ServiceSection = ({ icon: Icon, title, tag, desc, capabilities, index, onNavigate }) => {
   const isEven = index % 2 === 0;
@@ -138,6 +138,20 @@ const ServicesPage = ({ onNavigate }) => {
         'Cron Job Automated Email Reports',
         'Data Sync Scrapers & Parsers',
         'Legacy System API Wrappers'
+      ]
+    },
+    {
+      icon: Megaphone,
+      tag: 'GROW & SCALE',
+      title: 'Digital Marketing Services',
+      desc: 'Grow your digital footprint and multiply revenue pipelines. We plan and deploy organic Search Engine Optimization campaigns, manage high-conversion Meta and Google Ads budgets, shape premium branding collateral, and capture verified B2B lead directories.',
+      capabilities: [
+        'Search Engine Optimization (SEO)',
+        'Social Media Marketing & Creative Content',
+        'Google PPC & Display Network Ads',
+        'Meta Paid Social Acquisition Campaigns',
+        'Branding Strategy & Identity Design',
+        'B2B / B2C Lead Generation Funnels'
       ]
     }
   ];

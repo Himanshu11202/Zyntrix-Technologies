@@ -12,6 +12,7 @@ import ProcessSlide from './components/slides/ProcessSlide';
 import WhyChooseUsSlide from './components/slides/WhyChooseUsSlide';
 import JourneySlide from './components/slides/JourneySlide';
 import ReviewsSlide from './components/slides/ReviewsSlide';
+import PricingSlide from './components/slides/PricingSlide';
 import CtaSlide from './components/slides/CtaSlide';
 
 // Sub Pages
@@ -146,6 +147,11 @@ function App() {
             {/* Section 8: Reviews Carousel */}
             <div id="reviews-slide">
               <ReviewsSlide />
+            </div>
+
+            {/* Section 8.5: Pricing */}
+            <div id="pricing-slide">
+              <PricingSlide onNavigate={navigateTo} />
             </div>
 
             {/* Section 9: CTA Action */}

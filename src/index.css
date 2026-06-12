@@ -480,8 +480,101 @@ textarea.form-input {
 
 .modal-overlay {
   animation: modalFade 0.25s ease-out forwards;
+  will-change: opacity;
 }
 
 .modal-panel {
   animation: modalScale 0.3s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+  will-change: transform, opacity;
 }
+
+/* -------------------------------------------------------------
+ * Premium Performance & Mobile Responsiveness Optimizations
+ * ------------------------------------------------------------- */
+
+/* Hardware GPU Acceleration */
+.animated-float, .glow-neon, .page-fade-in, .glass-card, .btn {
+  will-change: transform, opacity;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+/* Base Headings & Typography Scalings */
+h1, h2, h3, h4 {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Touch Targets for Interactive Elements (44px Rule) */
+.btn, 
+header button, 
+header a, 
+footer button, 
+.slider-indicator button,
+.form-input {
+  min-height: 44px;
+}
+
+/* Mobile Responsiveness Fine-Tuning */
+@media (max-width: 768px) {
+  /* Prevent container overflow horizontal scroll */
+  body, html {
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  .container {
+    padding: 0 1.25rem;
+  }
+
+  /* Spacing Adjustments */
+  .ppt-slide {
+    padding: 5.5rem 1.25rem 3.5rem 1.25rem;
+  }
+  
+  .page-wrapper {
+    padding-top: 5rem;
+  }
+
+  /* Typography Optimization */
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .section-subtitle {
+    font-size: 0.85rem;
+    margin-bottom: 2rem;
+    padding: 0 0.5rem;
+  }
+
+  /* Card and Grid Spacings */
+  .glass-card {
+    padding: 1.5rem 1.25rem !important;
+    border-radius: 16px;
+  }
+  
+  /* Faster navbar interactions */
+  header {
+    padding: 0.5rem 1.25rem !important;
+  }
+  
+  .mobile-only {
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/* Glassmorphism Hover Glow Effect Enhancements */
+.glass-card:hover {
+  box-shadow: 0 12px 35px 0 var(--accent-glow), 0 0 15px 0 rgba(139, 92, 246, 0.1) !important;
+}
+
+/* Shimmer Keyframe definition if not present */
+@keyframes shimmerAnimation {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+

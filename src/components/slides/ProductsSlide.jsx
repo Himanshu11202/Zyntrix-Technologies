@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Star, X, ExternalLink, ShieldAlert, Cpu, Layers, CheckCircle2 } from 'lucide-react';
+import OptimizedImage from '../OptimizedImage';
 
 const ProjectsSlide = ({ onNavigate }) => {
   const [filter, setFilter] = useState('all');
@@ -195,7 +196,7 @@ const ProjectsSlide = ({ onNavigate }) => {
               <div>
                 {/* Header Image */}
                 <div style={{ position: 'relative', height: '180px', width: '100%', overflow: 'hidden' }}>
-                  <img 
+                  <OptimizedImage 
                     src={proj.image} 
                     alt={proj.name}
                     style={{ width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 0.4s ease' }}

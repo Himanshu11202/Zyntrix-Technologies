@@ -21,12 +21,24 @@ const Header = ({ currentPage, onNavigate, theme, toggleTheme }) => {
     { id: 'home', label: 'Home' },
     { id: 'products', label: 'Products' },
     { id: 'services', label: 'Services' },
+    { id: 'pricing', label: 'Pricing' },
     { id: 'about', label: 'About Us' },
     { id: 'careers', label: 'Careers' },
     { id: 'contact', label: 'Contact' }
   ];
 
   const handleNavClick = (id) => {
+    if (id === 'pricing') {
+      onNavigate('home');
+      setMobileMenuOpen(false);
+      setTimeout(() => {
+        const el = document.getElementById('pricing-slide');
+        if (el) {
+          el.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 150);
+      return;
+    }
     onNavigate(id);
     setMobileMenuOpen(false);
   };
