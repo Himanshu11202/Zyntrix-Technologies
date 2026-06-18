@@ -36,7 +36,7 @@ const StatCard = ({ icon: Icon, target, suffix, label, delay = 0 }) => {
 
     const totalDuration = 1500; // ms
     const incrementTime = Math.max(Math.floor(totalDuration / end), 15);
-    
+
     const timer = setTimeout(() => {
       const step = Math.ceil(end / 40);
       const counter = setInterval(() => {
@@ -56,7 +56,7 @@ const StatCard = ({ icon: Icon, target, suffix, label, delay = 0 }) => {
   }, [isVisible, target, delay]);
 
   return (
-    <div 
+    <div
       ref={cardRef}
       className="glass-card"
       style={{
@@ -71,7 +71,7 @@ const StatCard = ({ icon: Icon, target, suffix, label, delay = 0 }) => {
         borderRadius: '16px'
       }}
     >
-      <div 
+      <div
         style={{
           display: 'flex',
           alignItems: 'center',
@@ -86,10 +86,10 @@ const StatCard = ({ icon: Icon, target, suffix, label, delay = 0 }) => {
       >
         <Icon size={20} />
       </div>
-      <h3 
-        style={{ 
-          fontSize: '2.6rem', 
-          fontWeight: '800', 
+      <h3
+        style={{
+          fontSize: '2.6rem',
+          fontWeight: '800',
           marginBottom: '0.25rem',
           fontFamily: 'var(--font-heading)',
           color: 'var(--text-color)'
@@ -105,18 +105,18 @@ const StatCard = ({ icon: Icon, target, suffix, label, delay = 0 }) => {
 
 const StatsSlide = () => {
   const stats = [
-    { icon: Briefcase, target: '120', suffix: '+', label: 'Projects Completed', delay: 100 },
-    { icon: Users, target: '50', suffix: '+', label: 'Clients Served', delay: 200 },
+    { icon: Briefcase, target: '6', suffix: '+', label: 'Projects Completed', delay: 100 },
+    { icon: Users, target: '10', suffix: '+', label: 'Clients Served', delay: 200 },
     { icon: Award, target: '99', suffix: '.8%', label: 'Success Rate', delay: 300 },
-    { icon: Heart, target: '5', suffix: '+', label: 'Years Experience', delay: 400 },
-    { icon: Layers, target: '40', suffix: '+', label: 'Team Size', delay: 500 }
+    { icon: Heart, target: '3', suffix: '+', label: 'Years Experience', delay: 400 },
+    { icon: Layers, target: '20', suffix: '+', label: 'Team Size', delay: 500 }
   ];
 
   return (
     <section className="ppt-slide" style={{ position: 'relative', background: 'rgba(0,0,0,0.1)' }}>
       <div className="glow-spot" style={{ top: '20%', right: '20%' }}></div>
       <div className="glow-spot-purple" style={{ bottom: '10%', left: '10%' }}></div>
-      
+
       <div className="container" style={{ position: 'relative', zIndex: 2 }}>
         <div className="title-container">
           <h2 className="section-title">Operations in Numbers</h2>
@@ -134,7 +134,7 @@ const StatsSlide = () => {
           margin: '0 auto'
         }}>
           {stats.map((stat, index) => (
-            <StatCard 
+            <StatCard
               key={index}
               icon={stat.icon}
               target={stat.target}

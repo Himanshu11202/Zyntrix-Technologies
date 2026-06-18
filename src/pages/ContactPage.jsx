@@ -149,8 +149,8 @@ const ContactPage = () => {
                   </div>
                   <div>
                     <span style={{ fontSize: '0.7rem', color: 'var(--text-muted)', display: 'block', textTransform: 'uppercase', tracking: '0.05em' }}>Email Support</span>
-                    <a href="mailto:support@zyntrix.com" style={{ fontSize: '0.9rem', color: 'var(--text-color)', textDecoration: 'none', fontWeight: '600' }}>
-                      zyntrixsupport@gmail.com
+                    <a href="mailto:patidarhimanshu2004@gmail.com" style={{ fontSize: '0.9rem', color: 'var(--text-color)', textDecoration: 'none', fontWeight: '600' }}>
+                      patidarhimanshu2004@gmail.com
                     </a>
                   </div>
                 </div>
