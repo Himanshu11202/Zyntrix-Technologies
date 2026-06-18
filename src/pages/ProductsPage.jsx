@@ -72,7 +72,7 @@ const ProductsPage = ({ onNavigate }) => {
           </p>
 
           {/* Tabs */}
-          <div 
+          <div
             className="glass-card"
             style={{
               display: 'inline-flex',
@@ -128,10 +128,10 @@ const ProductsPage = ({ onNavigate }) => {
                   Managing rooms, leases, and tenant compliance can turn into administrative headaches. Nivas automates utility billing calculations, creates rent receipts, alerts tenants of due dates, and visualizes cash flow statistics.
                 </p>
                 <div style={{ display: 'flex', gap: '1rem' }}>
-                  <button 
+                  <button
                     onClick={() => handleProductCardClick(
-                      'Nivas PG Manager', 
-                      nivasFeatures.map(f => f.name + ': ' + f.desc), 
+                      'Nivas PG Manager',
+                      nivasFeatures.map(f => f.name + ': ' + f.desc),
                       'https://nivas-frontend.vercel.app/',
                       ['React', 'Spring Boot', 'Postgres', 'AWS'],
                       'Enterprise-grade property administration platform automating KYC databases, room configurations, and double-entry rent ledger auditing.'
@@ -145,17 +145,17 @@ const ProductsPage = ({ onNavigate }) => {
                 </div>
               </div>
 
-              <div 
-                className="glass-card" 
-                style={{ 
-                  borderRadius: '16px', 
-                  overflow: 'hidden', 
+              <div
+                className="glass-card"
+                style={{
+                  borderRadius: '16px',
+                  overflow: 'hidden',
                   border: '1px solid var(--accent-color)',
-                  boxShadow: '0 8px 30px var(--accent-glow)' 
+                  boxShadow: '0 8px 30px var(--accent-glow)'
                 }}
               >
-                <OptimizedImage 
-                  src="/nivas_dashboard.png" 
+                <OptimizedImage
+                  src="/nivas_dashboard.png"
                   alt="Nivas Dashboard Preview"
                   style={{ width: '100%', height: 'auto', display: 'block' }}
                 />
@@ -173,13 +173,13 @@ const ProductsPage = ({ onNavigate }) => {
               marginBottom: '4rem'
             }}>
               {nivasFeatures.map((feat, idx) => (
-                <div 
-                  key={idx} 
-                  className="glass-card" 
+                <div
+                  key={idx}
+                  className="glass-card"
                   onClick={() => handleProductCardClick(
-                    feat.name, 
-                    [feat.desc], 
-                    'https://nivas-frontend.vercel.app/', 
+                    feat.name,
+                    [feat.desc],
+                    'https://nivas-frontend.vercel.app/',
                     ['React', 'Spring Boot', 'Postgres'],
                     'Core module of Nivas PG Manager. Designed for high performance, ease of use, and local compliance.'
                   )}
@@ -208,11 +208,11 @@ const ProductsPage = ({ onNavigate }) => {
                 { name: 'Growth', price: '₹2,499', desc: 'Designed for larger hostels & multi-floor PG systems.', limit: 'Up to 100 tenants', popular: true },
                 { name: 'Enterprise', price: 'Custom', desc: 'Dedicated cloud containers and custom SMS integrations.', limit: 'Unlimited tenants' }
               ].map((tier, idx) => (
-                <div 
-                  key={idx} 
-                  className="glass-card" 
-                  style={{ 
-                    padding: '2.2rem 1.8rem', 
+                <div
+                  key={idx}
+                  className="glass-card"
+                  style={{
+                    padding: '2.2rem 1.8rem',
                     border: tier.popular ? '2px solid var(--accent-color)' : '1px solid var(--glass-border)',
                     textAlign: 'center',
                     boxShadow: tier.popular ? '0 8px 25px var(--accent-glow)' : 'none',
@@ -245,11 +245,11 @@ const ProductsPage = ({ onNavigate }) => {
                     <hr style={{ borderColor: 'var(--glass-border)', margin: '1rem 0' }} />
                     <span style={{ fontWeight: '600', fontSize: '0.85rem', display: 'block', marginBottom: '1.75rem' }}>{tier.limit}</span>
                   </div>
-                  <button 
+                  <button
                     onClick={() => handleProductCardClick(
-                      `Nivas ${tier.name} Plan`, 
-                      [`Pricing level: ${tier.price}/month`, `Limitation parameters: ${tier.limit}`, `Features included: All basic Nivas dashboard tools.`], 
-                      'https://nivas-frontend.vercel.app/', 
+                      `Nivas ${tier.name} Plan`,
+                      [`Pricing level: ${tier.price}/month`, `Limitation parameters: ${tier.limit}`, `Features included: All basic Nivas dashboard tools.`],
+                      'https://nivas-frontend.vercel.app/',
                       ['React', 'Postgres'],
                       `Plan selection details. Select this setup to deploy Zyntrix Nivas software on your custom servers.`
                     )}
@@ -283,11 +283,11 @@ const ProductsPage = ({ onNavigate }) => {
                   Streamline hospitality loops with mobile checkouts. Guests scan QR codes at restaurant tables, check descriptions/menus, specify preferences, and order. Kitchen displays receive logs instantly, and waiters only deliver dishes.
                 </p>
                 <div style={{ display: 'flex', gap: '1rem' }}>
-                  <button 
+                  <button
                     onClick={() => handleProductCardClick(
-                      'ScanBite QR Ordering', 
-                      scanbiteFeatures.map(f => f.name + ': ' + f.desc), 
-                      'https://scanbite-qr-checkout.vercel.app',
+                      'ScanBite QR Ordering',
+                      scanbiteFeatures.map(f => f.name + ': ' + f.desc),
+                      'https://scanbite-frontend.vercel.app/',
                       ['React', 'Node.js', 'MongoDB', 'Websockets'],
                       'A mobile-first dynamic menu ordering suite. Supports instant KDS (Kitchen Display System) routing and digital receipt processing.'
                     )}
@@ -300,19 +300,19 @@ const ProductsPage = ({ onNavigate }) => {
                 </div>
               </div>
 
-              <div 
-                className="glass-card" 
-                style={{ 
-                  borderRadius: '16px', 
-                  overflow: 'hidden', 
+              <div
+                className="glass-card"
+                style={{
+                  borderRadius: '16px',
+                  overflow: 'hidden',
                   border: '1px solid var(--accent-color)',
                   boxShadow: '0 8px 30px var(--accent-glow)',
                   maxWidth: '380px',
-                  margin: '0 auto' 
+                  margin: '0 auto'
                 }}
               >
-                <OptimizedImage 
-                  src="/scanbite_qr_ui.png" 
+                <OptimizedImage
+                  src="/scanbite_qr_ui.png"
                   alt="ScanBite Mobile Mockup"
                   style={{ width: '100%', height: 'auto', display: 'block' }}
                 />
@@ -330,13 +330,13 @@ const ProductsPage = ({ onNavigate }) => {
               marginBottom: '4rem'
             }}>
               {scanbiteFeatures.map((feat, idx) => (
-                <div 
-                  key={idx} 
-                  className="glass-card" 
+                <div
+                  key={idx}
+                  className="glass-card"
                   onClick={() => handleProductCardClick(
-                    feat.name, 
-                    [feat.desc], 
-                    'https://scanbite-qr-checkout.vercel.app', 
+                    feat.name,
+                    [feat.desc],
+                    'https://scanbite-frontend.vercel.app/',
                     ['React', 'Node.js', 'MongoDB'],
                     'Core module of ScanBite QR ordering system. Zero friction menu browsing.'
                   )}
@@ -365,11 +365,11 @@ const ProductsPage = ({ onNavigate }) => {
                 { name: 'Restaurant Pro', price: '₹3,499', desc: 'Full-service dine-in tables, kitchen screens, analytics.', tables: 'Up to 35 tables', popular: true },
                 { name: 'Franchise Hub', price: 'Custom', desc: 'Centralized warehouse, brand management, custom POS sync.', tables: 'Unlimited tables' }
               ].map((tier, idx) => (
-                <div 
-                  key={idx} 
-                  className="glass-card" 
-                  style={{ 
-                    padding: '2.2rem 1.8rem', 
+                <div
+                  key={idx}
+                  className="glass-card"
+                  style={{
+                    padding: '2.2rem 1.8rem',
                     border: tier.popular ? '2px solid var(--accent-color)' : '1px solid var(--glass-border)',
                     textAlign: 'center',
                     boxShadow: tier.popular ? '0 8px 25px var(--accent-glow)' : 'none',
@@ -402,11 +402,11 @@ const ProductsPage = ({ onNavigate }) => {
                     <hr style={{ borderColor: 'var(--glass-border)', margin: '1rem 0' }} />
                     <span style={{ fontWeight: '600', fontSize: '0.85rem', display: 'block', marginBottom: '1.75rem' }}>{tier.tables}</span>
                   </div>
-                  <button 
+                  <button
                     onClick={() => handleProductCardClick(
-                      `ScanBite ${tier.name} Plan`, 
-                      [`Pricing tier: ${tier.price}/month`, `Capacity: ${tier.tables}`, `Features: Full menu sync.`], 
-                      'https://scanbite-qr-checkout.vercel.app', 
+                      `ScanBite ${tier.name} Plan`,
+                      [`Pricing tier: ${tier.price}/month`, `Capacity: ${tier.tables}`, `Features: Full menu sync.`],
+                      'https://scanbite-frontend.vercel.app/',
                       ['React', 'Node.js'],
                       `Plan selection details. Select this setup to deploy Zyntrix ScanBite software on your custom restaurant layout.`
                     )}
@@ -437,14 +437,14 @@ const ProductsPage = ({ onNavigate }) => {
               gap: '2rem'
             }}>
               {upcomingProducts.map((prod) => (
-                <div 
-                  key={prod.id} 
-                  className="glass-card" 
+                <div
+                  key={prod.id}
+                  className="glass-card"
                   onClick={() => handleProductCardClick(
-                    prod.name, 
-                    [prod.details], 
-                    '#', 
-                    prod.tech, 
+                    prod.name,
+                    [prod.details],
+                    '#',
+                    prod.tech,
                     prod.desc + ` Target launch: ${prod.eta}`
                   )}
                   style={{ padding: '2rem', border: '1px solid var(--glass-border)', cursor: 'pointer', display: 'flex', flexDirection: 'column', justifySubpage: 'space-between', minHeight: '230px' }}
@@ -487,7 +487,7 @@ const ProductsPage = ({ onNavigate }) => {
 
       {/* Shared Interactive Detail Modal */}
       {selectedProductDetails && (
-        <div 
+        <div
           className="modal-overlay"
           style={{
             position: 'fixed',
@@ -506,7 +506,7 @@ const ProductsPage = ({ onNavigate }) => {
           }}
           onClick={() => setSelectedProductDetails(null)}
         >
-          <div 
+          <div
             className="glass-card modal-panel"
             style={{
               maxWidth: '650px',
@@ -523,7 +523,7 @@ const ProductsPage = ({ onNavigate }) => {
             onClick={(e) => e.stopPropagation()}
           >
             {/* Close Button */}
-            <button 
+            <button
               onClick={() => setSelectedProductDetails(null)}
               style={{
                 position: 'absolute',
@@ -561,7 +561,7 @@ const ProductsPage = ({ onNavigate }) => {
             </div>
 
             {/* Dummy Mockup Window */}
-            <div 
+            <div
               style={{
                 height: '120px',
                 borderRadius: '12px',
@@ -606,16 +606,16 @@ const ProductsPage = ({ onNavigate }) => {
 
             {/* Close / Action Buttons */}
             <div style={{ display: 'flex', justifyContent: 'flex-end', gap: '1rem' }}>
-              <button 
+              <button
                 onClick={() => setSelectedProductDetails(null)}
                 className="btn btn-secondary"
                 style={{ fontSize: '0.8rem', padding: '0.6rem 1.4rem', borderRadius: '8px' }}
               >
                 Close Details
               </button>
-              
+
               {selectedProductDetails.liveUrl !== '#' && (
-                <a 
+                <a
                   href={selectedProductDetails.liveUrl}
                   target="_blank"
                   rel="noreferrer"
