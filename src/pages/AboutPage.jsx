@@ -60,11 +60,11 @@ const AboutPage = () => {
         </div>
 
         {/* Premium Founder & CEO Showcase Section */}
-        <div 
-          className="glass-card" 
-          style={{ 
-            padding: '3rem 2.5rem', 
-            border: '1px solid var(--glass-border)', 
+        <div
+          className="glass-card"
+          style={{
+            padding: '3rem 2.5rem',
+            border: '1px solid var(--glass-border)',
             borderRadius: '24px',
             marginBottom: '4rem',
             position: 'relative',
@@ -87,7 +87,7 @@ const AboutPage = () => {
           }}>
             {/* Left side: Premium photo frame with 3D hover tilt */}
             <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
-              <div 
+              <div
                 onMouseMove={handleMouseMove}
                 onMouseLeave={handleMouseLeave}
                 style={{
@@ -126,19 +126,19 @@ const AboutPage = () => {
                   background: 'var(--bg-color)',
                   position: 'relative'
                 }}>
-                  <OptimizedImage 
-                    src="/himanshu_ceo.jpg" 
+                  <OptimizedImage
+                    src="/himanshu_ceo.jpg.jpeg"
                     alt="Himanshu Patidar, Founder & CEO"
-                    style={{ 
-                      width: '100%', 
-                      height: '100%', 
+                    style={{
+                      width: '100%',
+                      height: '100%',
                       objectFit: 'cover',
                       display: 'block'
-                    }} 
+                    }}
                   />
                 </div>
               </div>
-              
+
               {/* Social Media Links */}
               <div style={{ display: 'flex', gap: '1rem', marginTop: '1.75rem' }}>
                 {[
@@ -149,7 +149,7 @@ const AboutPage = () => {
                 ].map((social, idx) => {
                   const Icon = social.icon;
                   return (
-                    <a 
+                    <a
                       key={idx}
                       href={social.url}
                       target="_blank"
@@ -191,7 +191,7 @@ const AboutPage = () => {
             {/* Right side: Detailed CEO presentation */}
             <div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
               <div>
-                <span 
+                <span
                   style={{
                     padding: '0.25rem 0.75rem',
                     borderRadius: '20px',
@@ -221,7 +221,7 @@ const AboutPage = () => {
               </p>
 
               {/* Highlighted Vision Statement */}
-              <div 
+              <div
                 className="glass-card"
                 style={{
                   padding: '1.25rem 1.5rem',
@@ -270,16 +270,16 @@ const AboutPage = () => {
                 </span>
                 <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem' }}>
                   {['Full-Stack Engineering', 'Cloud Architecture', 'System Design', 'Automation Algorithms', 'UI/UX Design'].map((skill) => (
-                    <span 
-                      key={skill} 
-                      style={{ 
-                        fontSize: '9.5px', 
-                        fontWeight: '700', 
-                        color: 'var(--text-color)', 
-                        background: 'rgba(255,255,255,0.03)', 
-                        border: '1px solid var(--glass-border)', 
-                        padding: '0.3rem 0.6rem', 
-                        borderRadius: '6px' 
+                    <span
+                      key={skill}
+                      style={{
+                        fontSize: '9.5px',
+                        fontWeight: '700',
+                        color: 'var(--text-color)',
+                        background: 'rgba(255,255,255,0.03)',
+                        border: '1px solid var(--glass-border)',
+                        padding: '0.3rem 0.6rem',
+                        borderRadius: '6px'
                       }}
                     >
                       {skill}
@@ -355,11 +355,11 @@ const AboutPage = () => {
             ].map((ach, idx) => {
               const Icon = ach.icon;
               return (
-                <div 
-                  key={idx} 
-                  className="glass-card" 
-                  style={{ 
-                    padding: '2rem', 
+                <div
+                  key={idx}
+                  className="glass-card"
+                  style={{
+                    padding: '2rem',
                     border: '1px solid var(--glass-border)',
                     display: 'flex',
                     flexDirection: 'column',
